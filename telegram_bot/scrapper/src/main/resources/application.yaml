@@ -1,0 +1,53 @@
+app:
+  github-token: ${GITHUB_TOKEN}  # env variable  # env variable
+  stackoverflow:
+    key: ${SO_TOKEN_KEY}
+    access-token: ${SO_ACCESS_TOKEN}
+  kafka:
+    consumer:
+      group-id: scrapper-group
+    topics:
+      requests: user.commands
+      responses: user.responses
+      updates: link.updates
+      dlq: dead_letter_queue
+
+
+spring:
+  application:
+    name: Scrapper
+  liquibase:
+    enabled: true
+    change-log: classpath:/migrations/changelog-master.xml
+  datasource:
+    access-type: jdbc
+    url: ${URL}
+    username: ${USERNAME}
+    password: ${PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+      properties:
+        hibernate:
+          temp:
+            use_jdbc_metadata_defaults: false
+    open-in-view: false
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    properties:
+      spring.json.trusted.packages: backend.academy.common.dto.kafka.request,backend.academy.common.dto.kafka.response
+      spring.json.value.default.type: backend.academy.common.dto.kafka.response.KafkaBotResponse
+
+
+server:
+  port: 8081
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui

@@ -1,0 +1,68 @@
+version: '3.8'
+
+
+services:
+  postgres:
+    image: postgres
+    container_name: doc_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 20052005
+      POSTGRES_DB: lab2
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.0
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+
+  kafka:
+    image: confluentinc/cp-kafka:7.3.0
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,PLAINTEXT_HOST://0.0.0.0:29092
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    restart: unless-stopped
+
+  redis:
+    image: redis:7.0
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+#  bot:
+#    build:
+#      context: ../../../../bot
+#      dockerfile: Dockerfile
+#    container_name: my_bot
+#    depends_on:
+#      - postgres
+#    environment:
+#      POSTGRES_HOST: postgres
+#      POSTGRES_PORT: 5432
+#      POSTGRES_DB: lab2
+#      POSTGRES_USER: postgres
+#      POSTGRES_PASSWORD: 20052005
+#    ports:
+#      - "8080:8080"
+#    restart: unless-stopped
+volumes:
+  pgdata:
+  redis_data:
