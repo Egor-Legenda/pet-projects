@@ -17,7 +17,10 @@ import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.request.SendMessage;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import jakarta.annotation.PostConstruct;
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -46,6 +49,15 @@ import org.springframework.web.client.RestTemplate;
 @Slf4j
 @Component
 public class BotTelegram {
+    private static final int MAX_CACHE_PER_CHAT = 100;
+    private static final int MAX_CACHE_CHATS = 1000;
+
+    private static final Map<Long, Deque<String>> MESSAGE_CACHE = new LinkedHashMap<>() {
+        @Override
+        protected boolean removeEldestEntry(Map.Entry<Long, Deque<String>> eldest) {
+            return size() > MAX_CACHE_CHATS;
+        }
+    };
     private static Map<Long, DialogState> usersState;
     private static AddLinkRequest addLinkRequest;
     private final BotConfig botConfig;
@@ -346,4 +358,16 @@ public class BotTelegram {
             log.error("Command processing failed", e);
         }
     }
+
+    private void cacheMessage(Update update) {
+        Deque<String> chatMessages = MESSAGE_CACHE.computeIfAbsent(
+            update.message().chat().id(),
+            k -> new ArrayDeque<>(MAX_CACHE_PER_CHAT)
+        );
+        chatMessages.add(update.message().text());
+        while (chatMessages.size() > MAX_CACHE_PER_CHAT) {
+            chatMessages.removeFirst();
+        }
+    }
+
 }
