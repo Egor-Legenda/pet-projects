@@ -1,0 +1,1 @@
+{"uuid":"3ecdfdd5-2577-4be7-b091-8b581777b798","name":"Проверка кнопки 'Добавить в желания'","children":["2a036336-29c4-4231-9c04-86f65882d8a8"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750602510495,"stop":1750602513194}],"afters":[],"start":1750602510489,"stop":1750602523688}

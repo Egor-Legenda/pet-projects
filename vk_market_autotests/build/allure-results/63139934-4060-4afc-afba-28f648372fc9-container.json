@@ -1,0 +1,1 @@
+{"uuid":"63139934-4060-4afc-afba-28f648372fc9","name":"Проверка отображения изображения товара","children":["47045a95-966d-4f39-91ad-f69ba4b07b43"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750602486644,"stop":1750602489182}],"afters":[],"start":1750602486640,"stop":1750602490584}

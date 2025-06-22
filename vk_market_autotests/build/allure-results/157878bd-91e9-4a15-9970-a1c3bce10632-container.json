@@ -1,0 +1,1 @@
+{"uuid":"157878bd-91e9-4a15-9970-a1c3bce10632","name":"Проверка наличия кнопки 'Сохранить в закладки'","children":["f9c686a4-6878-492d-8374-13df06de8f09"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750597693931,"stop":1750597707255}],"afters":[],"start":1750597693709,"stop":1750597718381}

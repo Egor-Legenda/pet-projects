@@ -1,0 +1,1 @@
+{"uuid":"67178595-14ca-4d79-b6e2-1560ba0646f2","name":"Проверка отображения информации о дате создания сообществе","children":["de276f09-81a3-4545-808b-3cc0edae52ee"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750600645700,"stop":1750600654886}],"afters":[],"start":1750600645577,"stop":1750600655932}

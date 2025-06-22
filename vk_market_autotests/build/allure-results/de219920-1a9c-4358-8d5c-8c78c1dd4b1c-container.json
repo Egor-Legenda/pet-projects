@@ -1,0 +1,1 @@
+{"uuid":"de219920-1a9c-4358-8d5c-8c78c1dd4b1c","name":"Проверка перехода на основную страницу магазина","children":["45e71ace-e298-488e-9a1d-684f4a89a887"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750595731535,"stop":1750595741492}],"afters":[],"start":1750595731268,"stop":1750595743140}

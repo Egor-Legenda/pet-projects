@@ -1,0 +1,1 @@
+{"uuid":"9bde7f2c-c3d7-44fc-8c03-b713e03aa10f","name":"Проверка отображения вкладки 'Комментарии'","children":["68e5d811-7ca1-44b0-96c9-d302294d6c2b"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750602470453,"stop":1750602472975}],"afters":[],"start":1750602470450,"stop":1750602473058}

@@ -1,0 +1,1 @@
+{"uuid":"007caedf-8133-4c23-a8b0-654ea80d3304","name":"Проверка отображения цены товара","children":["c1b861a5-b431-4ea2-83a5-8e9dd8b60be9"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750602490593,"stop":1750602493452}],"afters":[],"start":1750602490587,"stop":1750602493562}

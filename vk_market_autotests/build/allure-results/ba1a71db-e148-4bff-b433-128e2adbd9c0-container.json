@@ -1,0 +1,1 @@
+{"uuid":"ba1a71db-e148-4bff-b433-128e2adbd9c0","name":"Проверка наличия и функциональности кнопки 'Написать' в магазине","children":["852b5976-333b-41ae-8e58-afc570713263"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750600958806,"stop":1750600969027}],"afters":[],"start":1750600958554,"stop":1750600969445}

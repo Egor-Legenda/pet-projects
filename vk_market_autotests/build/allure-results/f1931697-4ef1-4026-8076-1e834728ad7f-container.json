@@ -1,0 +1,1 @@
+{"uuid":"f1931697-4ef1-4026-8076-1e834728ad7f","name":"Проверка отображения информации о сообществе","children":["50d0548e-f154-4cec-bed0-546fb7f9d497"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750600281994,"stop":1750600290636}],"afters":[],"start":1750600281790,"stop":1750600292572}

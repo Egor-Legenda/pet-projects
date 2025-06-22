@@ -1,0 +1,1 @@
+{"uuid":"4eb06734-594a-42cc-94d7-779311fd1fc3","name":"Проверка отображения кнопки 'Подписаться'","children":["36c293cd-9a47-4eb8-a6ad-584905e6a836"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750602455175,"stop":1750602457082}],"afters":[],"start":1750602455169,"stop":1750602457142}

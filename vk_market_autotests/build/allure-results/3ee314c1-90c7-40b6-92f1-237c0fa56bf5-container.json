@@ -1,0 +1,1 @@
+{"uuid":"3ee314c1-90c7-40b6-92f1-237c0fa56bf5","name":"Проверка поля для ввода комментария","children":["f824136a-b005-4923-9cf0-ad988e7ff6da"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750602482421,"stop":1750602485177}],"afters":[],"start":1750602482418,"stop":1750602486638}

@@ -1,0 +1,1 @@
+{"uuid":"06161946-b442-4e3b-8dc9-dbe118ea06d8","name":"Проверка отображения вкладки 'Товары'","children":["65128d0b-f12f-415c-a94d-6ecb67956974"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750602447563,"stop":1750602450179}],"afters":[],"start":1750602447560,"stop":1750602450267}

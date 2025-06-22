@@ -1,0 +1,1 @@
+{"uuid":"73330d5f-0ac5-47c5-b8f2-60314493f2ed","name":"Проверка перехода в магазин сообщества","children":["7bb98a39-4e28-493f-8e12-9f1d8c376006"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750596521749,"stop":1750596531920}],"afters":[],"start":1750596521551,"stop":1750596534024}

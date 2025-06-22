@@ -1,0 +1,1 @@
+{"uuid":"444a4823-fc91-4da4-9f6f-aa3ff10e2c1a","name":"Проверка перехода в раздел товаров","children":["97040c0b-2b21-44a9-9664-459eb541cb2d"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750599801381,"stop":1750599809848}],"afters":[],"start":1750599801192,"stop":1750599811745}

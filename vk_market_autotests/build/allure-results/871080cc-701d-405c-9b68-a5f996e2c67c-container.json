@@ -1,0 +1,1 @@
+{"uuid":"871080cc-701d-405c-9b68-a5f996e2c67c","name":"Проверка кнопки 'Добавить в корзину'","children":["8e12abce-90e3-4c79-bc83-0a4e61b73a1d"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750592896325,"stop":1750592908893}],"afters":[],"start":1750592896105,"stop":1750592910610}

@@ -1,0 +1,1 @@
+{"uuid":"56c171fd-4694-47ee-ac89-71354938b0ab","name":"При отсутствии комментариев должна отображаться заглушка","children":["f4c3ccff-a195-4d1c-ad64-fc483d48f9da"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750591031876,"stop":1750591045840}],"afters":[],"start":1750591031681,"stop":1750591046431}
