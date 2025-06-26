@@ -1,1 +1,0 @@
-{"uuid":"1d3c26e3-a523-468b-9370-52c87043f1b1","name":"Проверка кнопки 'Перейти в магазин'","children":["3ef0ae76-ef83-40ad-8837-6531bf4ec47b"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750602526485,"stop":1750602529060}],"afters":[],"start":1750602526481,"stop":1750602530603}

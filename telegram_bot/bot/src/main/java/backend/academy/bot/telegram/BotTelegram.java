@@ -101,6 +101,7 @@ public class BotTelegram {
     }
 
     public void handleUpdate(Update update) {
+        cacheMessage(update);
         if (update.message() != null && update.message().text() != null) {
             String messageText = update.message().text().toLowerCase();
             long chatId = update.message().chat().id();

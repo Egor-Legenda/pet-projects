@@ -1,1 +1,0 @@
-{"uuid":"71cb0477-c623-41b8-a192-0ea5d5ec4c5c","name":"shouldDisplayProductPrice()","children":["b69d3a19-df00-488d-85c9-41271b6e1a71"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750584698368,"stop":1750584701818}],"afters":[],"start":1750584698368,"stop":1750584703335}

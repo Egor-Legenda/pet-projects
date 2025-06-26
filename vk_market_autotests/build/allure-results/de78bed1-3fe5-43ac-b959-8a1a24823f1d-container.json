@@ -1,1 +1,0 @@
-{"uuid":"de78bed1-3fe5-43ac-b959-8a1a24823f1d","name":"Должно отображаться поле для ввода комментария","children":["c085cc94-34e9-4c10-acec-d611e0391dc9"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750591066714,"stop":1750591089166}],"afters":[],"start":1750591066541,"stop":1750591091457}

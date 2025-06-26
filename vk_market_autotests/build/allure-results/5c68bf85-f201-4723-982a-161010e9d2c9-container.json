@@ -1,1 +1,0 @@
-{"uuid":"5c68bf85-f201-4723-982a-161010e9d2c9","name":"Проверка наличия кнопки 'Корзина'","children":["654359ff-29bc-4d1b-9930-8aad8d77a261"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750602576048,"stop":1750602586126}],"afters":[],"start":1750602575840,"stop":1750602587960}

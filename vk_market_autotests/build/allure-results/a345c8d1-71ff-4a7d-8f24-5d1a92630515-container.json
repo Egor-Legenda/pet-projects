@@ -1,1 +1,0 @@
-{"uuid":"a345c8d1-71ff-4a7d-8f24-5d1a92630515","name":"Проверка кнопки 'Поделиться' на странице товара","children":["e90ecdbe-3ea1-4d49-95ea-c836842f46c4"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750601354205,"stop":1750601365281}],"afters":[],"start":1750601354047,"stop":1750601365791}

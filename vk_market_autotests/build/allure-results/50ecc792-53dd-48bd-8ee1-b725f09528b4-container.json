@@ -1,1 +1,0 @@
-{"uuid":"50ecc792-53dd-48bd-8ee1-b725f09528b4","name":"Проверка кнопки 'Подписаться' на странице товара","children":["d2882966-2c97-428a-96d0-5ebaedd4d4be"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750601525032,"stop":1750601535888}],"afters":[],"start":1750601524833,"stop":1750601536361}

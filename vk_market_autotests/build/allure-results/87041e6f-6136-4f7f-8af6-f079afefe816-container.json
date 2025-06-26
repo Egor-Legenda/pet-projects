@@ -1,1 +1,0 @@
-{"uuid":"87041e6f-6136-4f7f-8af6-f079afefe816","name":"Проверка заглушки при отсутствии комментариев","children":["c333055d-9640-4dd4-a39b-9238d49dc156"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750602504810,"stop":1750602507541}],"afters":[],"start":1750602504806,"stop":1750602507637}

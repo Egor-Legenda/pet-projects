@@ -1,1 +1,0 @@
-{"uuid":"c25fb452-7458-4499-81a8-c26e85841563","name":"Проверка кнопки 'В избранное'","children":["740e0a44-3ad1-459e-be98-805c44869978"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750596576923,"stop":1750596586015}],"afters":[],"start":1750596576742,"stop":1750596587763}
