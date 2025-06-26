@@ -1,0 +1,1 @@
+{"uuid":"d726f8a5-9f4b-45df-a844-6d0c0274caa2","name":"Проверка отображения названия сообщества","children":["fc1e8ae1-da6c-4105-87d8-bce4743c3bdd"],"befores":[{"name":"setUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1750896658557,"stop":1750896660337}],"afters":[],"start":1750896658555,"stop":1750896660407}

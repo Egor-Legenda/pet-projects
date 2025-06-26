@@ -27,8 +27,7 @@
                 └── SearchSuggestionsTest
 ````
 
-## Запуск тестов
-mvn test
+
 
 ## Описание тестов
 ### SearchNavigationTest
@@ -49,3 +48,15 @@ mvn test
 * Тесты готовы к параллельному запуску
 
 * Неавтоматизированные тесты помечены как пропущенные с пояснением причины
+
+## Запуск всех тестов
+    mvn clean test
+
+## Запуск конкретного тестового класса
+    mvn test -Dtest=wiki.tests.SearchNavigationTest
+
+## Запуск одного теста
+    mvn test -Dtest=wiki.tests.SearchNavigationTest#navigateFromFirstSuggestion
+
+## Запуск группы тестов
+    mvn test -Dtest="wiki.tests.Search*Test"

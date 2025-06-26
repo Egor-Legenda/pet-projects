@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demo.tests.CommunityPageTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-06-26T00:10:17" hostname="EGORIK_LEGENDA" time="44.404">
+  <properties/>
+  <testcase name="Проверка отображения информации о дате создания сообществе" classname="com.example.demo.tests.CommunityPageTest" time="36.236"/>
+  <testcase name="Проверка отображения вкладки 'Товары'" classname="com.example.demo.tests.CommunityPageTest" time="2.432"/>
+  <testcase name="Проверка отображения описания о сообществе" classname="com.example.demo.tests.CommunityPageTest" time="2.04"/>
+  <testcase name="Проверка отображения названия сообщества" classname="com.example.demo.tests.CommunityPageTest" time="1.848"/>
+  <testcase name="Проверка отображения кнопки 'Подписаться'" classname="com.example.demo.tests.CommunityPageTest" time="1.669"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: C:\Users\eshuk\OneDrive\Рабочий стол\pet-projects\vk_market_autotests\build\downloads\1750896617944_16368_1
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+[Test worker] INFO com.codeborne.selenide.webdriver.SelenideNettyClientFactory - Changed readTimeout from PT3M to PT1M30S
+июн. 26, 2025 3:10:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+июн. 26, 2025 3:10:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.49. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.13.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=138.0.7204.49 Platform=windows
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 6.19.1
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.13.0 build revision: ba948ece5b*
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: ChromeDriver -> ChromeDriver: chrome on windows (b75bebc349ca99afba220b33d4aa91a7)
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig,webDriver=ChromeDriver: chrome on windows (b75bebc349ca99afba220b33d4aa91a7),proxy=null,downloadsFolder=C:\Users\eshuk\OneDrive\Рабочий стол\pet-projects\vk_market_autotests\build\downloads\1750896617944_16368_1] in 1 [size=1]
+[Test worker] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
+]]></system-err>
+</testsuite>
