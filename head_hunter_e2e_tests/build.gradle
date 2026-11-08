@@ -1,0 +1,81 @@
+plugins {
+    id 'java'
+}
+
+group = 'edu.itmo'
+version = '1.0-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+
+    implementation platform('org.junit:junit-bom:5.10.0')
+    implementation 'org.seleniumhq.selenium:selenium-java:4.25.0'
+    implementation 'org.junit.jupiter:junit-jupiter-api'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.slf4j:slf4j-nop:2.0.16'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
+    testLogging {
+        events 'passed', 'skipped', 'failed'
+        exceptionFormat 'full'
+    }
+}
+
+tasks.register('testChrome', Test) {
+    systemProperty 'browser', 'chrome'
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+}
+
+tasks.register('testFirefox', Test) {
+    systemProperty 'browser', 'firefox'
+    testClassesDirs = sourceSets.test.output.classesDirs
+    classpath = sourceSets.test.runtimeClasspath
+}
+
+tasks.named('test', Test) {
+    systemProperty 'browser', 'chrome'
+}
+
+tasks.register('testBothBrowsers') {
+    group = 'verification'
+    dependsOn testClasses
+    doLast {
+        List<String> filter = []
+        if (project.hasProperty('includeTests')) {
+            filter.addAll(['--tests', findProperty('includeTests').toString()])
+        }
+
+        List<String> chromeCmd = (['cmd', '/c', 'gradlew.bat', 'testChrome', '--no-daemon']) + filter
+        List<String> firefoxCmd = (['cmd', '/c', 'gradlew.bat', 'testFirefox', '--no-daemon']) + filter
+
+        Process pChrome = new ProcessBuilder(chromeCmd).directory(rootDir).inheritIO().start()
+        Process pFirefox = new ProcessBuilder(firefoxCmd).directory(rootDir).inheritIO().start()
+
+        int codeChrome = pChrome.waitFor()
+        int codeFirefox = pFirefox.waitFor()
+        if (codeChrome != 0) {
+            throw new GradleException("testChrome завершился с кодом $codeChrome")
+        }
+        if (codeFirefox != 0) {
+            throw new GradleException("testFirefox завершился с кодом $codeFirefox")
+        }
+    }
+}
